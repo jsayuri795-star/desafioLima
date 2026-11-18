@@ -1,0 +1,137 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff5e9;
+    background-image:
+        radial-gradient(#f4cbd0 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+
+    font-family: Georgia, serif;
+    color: #80604f;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    color: #d58c96;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 0px #fff;
+    margin-bottom: 12px;
+}
+
+/* Subtítulo */
+p {
+    color: #a78670;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* Cartão de login */
+form {
+    width: 350px;
+    max-width: 100%;
+    padding: 40px 32px;
+
+    background-color: #fffdf9;
+    border: 2px solid #f3d5d0;
+    border-radius: 28px;
+
+    box-shadow:
+        0 8px 0 #f4d9c7,
+        0 12px 25px rgba(157, 113, 94, 0.15);
+
+    position: relative;
+}
+
+/* Lacinho decorativo */
+form::before {
+    content: "୨୧";
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #d58c96;
+    background-color: #fff5e9;
+    padding: 0 12px;
+    font-size: 32px;
+}
+
+/* Campos */
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+label {
+    color: #b17e6c;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+/* Inputs */
+input {
+    padding: 13px;
+    border: 2px solid #f2ded1;
+    border-radius: 14px;
+
+    background-color: #fff9f4;
+    color: #80604f;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #e6aab2;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #fce8e9;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 14px;
+
+    border:#e6aab2;
+    border-radius: 16px;
+
+    background:#f4cbd0;
+
+    color: #89654f;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow:#f2ded1 0 8px 0;
+    background:#e6aab2;
+}
+
+button:active {
+    transform: translateY(0);
+}
